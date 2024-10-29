@@ -5,13 +5,13 @@ for i in numbers:
     if i == 2:
         primes.append(i)
     for j in range(2, i):
-        print(i, j)
+        #print(i, j)
         is_primes = i % j
         if is_primes == 0 and j < i :
             not_primes.append(i)
             break
         elif is_primes != 0 and j < i:
-                primes.append(i)
+            primes.append(i)
 print(list(set(primes)))
 print(list(set(not_primes)))
 
